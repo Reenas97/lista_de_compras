@@ -3,3 +3,4 @@
   <p> nome:<%= @product.name %></p>
   <p> preco:<%= @product.price %></p>
   <p> quantidade:<%= @product.quantity %></p>
+  <p> <%= button_to "Deletar", @product, method: :delete, data: {confirm: 'isso mesmo parça?'} %>

@@ -1,0 +1,14 @@
+<%= form_with model: @product do |form| %>
+  
+  <%= form.label :name, "Nome: " %>
+  <%= form.text_field :name %>
+    <br/><br/>
+  <%= form.label :price, "Preço: " %>
+  <%= form.number_field :price %>
+  <br/><br/>
+  <%= form.label :quantity, "Quantidade: " %>
+  <%= form.number_field :quantity %>
+  <p>
+    <%= form.submit "Criar produto" %>
+  </p>
+<% end %>
